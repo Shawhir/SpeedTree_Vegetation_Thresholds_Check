@@ -1,7 +1,16 @@
 # SpeedTree vegetation LOD thresholds check
 
 Copies of the Realistic_Trees GLBs (all 92 species, Spring/Autumn, Adult/Young, Draco/No_Draco/Uncompressed)
-with only `ESRI_lod.thresholds` changed. Meshes, textures and materials are untouched.
+with `ESRI_lod.thresholds` changed. Meshes, textures and materials are untouched.
+
+Each GLB also carries, as the legacy trees do:
+
+- `ESRI_proxyEllipsoid` on the root node (z-up model units, `{"center": [x, y, z], "radius": [rx, ry, rz]}`),
+  shaped like the legacy counterpart's ellipsoid as proportions of the tree, or the legacy average for
+  species with no legacy counterpart, applied to each model's own bounds.
+- Esri asset extras (`ESRI_type: symbolResource`, `ESRI_version: 1.1`,
+  `ESRI_webstyleSymbol: {name, webstyle: EsriRealisticTreesStyle}`). ArcGIS Pro 3.7 only uses the
+  ellipsoid when all three keys are present and the webstyle is `EsriRealisticTreesStyle`.
 
 ## Folders
 
