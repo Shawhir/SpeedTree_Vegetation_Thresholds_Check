@@ -1,4 +1,4 @@
-species,model,repo thresholds,option E thresholds
+species,model,original thresholds,new thresholds
 Abies_Balsamea,Abies_Balsamea_Autumn_Adult,"[64.674, 20.749, 8.608, 2.0]","[233.698, 139.241, 86.685, 2.0]"
 Abies_Balsamea,Abies_Balsamea_Autumn_Young,"[64.674, 20.749, 8.608, 2.0]","[250.385, 149.375, 93.061, 2.0]"
 Abies_Balsamea,Abies_Balsamea_Spring_Adult,"[64.674, 20.749, 8.608, 2.0]","[233.698, 139.241, 86.685, 2.0]"
